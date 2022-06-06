@@ -2,7 +2,7 @@ import React from "react";
 
 
 const HomePage: React.FC<{}> = ({}) => {
-  return <div></div>
+  return <div>ui_challenge</div>
 }
 
 export default HomePage;
