@@ -1,11 +1,16 @@
-import React, { HTMLAttributes, HtmlHTMLAttributes } from "react";
+import React, { HTMLAttributes, ReactNode } from "react";
 import cb from "classnames/bind";
 import styles from "./sidebar.module.scss";
+import { ReactComponent as Bandage } from "assets/bandage.svg";
+import { ReactComponent as Monitoring } from "assets/monitoring.svg";
+import { ReactComponent as Pills} from "assets/pills.svg";
+import { ReactComponent as Eye} from "assets/eye.svg";
+import { ReactComponent as Bottle} from "assets/bottle.svg";
 
 const cn = cb.bind(styles);
 
 interface NavItemProps extends HTMLAttributes<HTMLDivElement> {
-  icon: string;
+  icon: ReactNode;
   name: string;
 }
 
@@ -37,6 +42,7 @@ const ProfileItem: React.FC<ProfileItemProps> = (props) => {
 };
 
 const Sidebar: React.FC = () => {
+  const grey = "rgb(186 186 186)"
   return (
     <div className={cn("wrapper")}>
       <div className={cn("logo__container")}>
@@ -45,11 +51,11 @@ const Sidebar: React.FC = () => {
       </div>
 
       <div className={cn("nav__container")}>
-        <NavItem className={cn("active")} icon={"🩹"} name={"Health guide"} />
-        <NavItem icon={"📋"} name={"Dashboard"} />
-        <NavItem icon={"💊"} name={"Calendar"} />
-        <NavItem icon={"👁"} name={"Consultations"} />
-        <NavItem icon={"🍼"} name={"Health tasks"} />
+        <NavItem className={cn("active")} icon={<Bandage fill={"black"} style={{height: 25, width: 25}} />} name={"Health guide"} />
+        <NavItem icon={<Monitoring fill={grey} style={{height: 25, width: 25}} />} name={"Dashboard"} />
+        <NavItem icon={<Pills fill={grey} style={{height: 25, width: 25}} />} name={"Calendar"} />
+        <NavItem icon={<Eye fill={grey} style={{height: 25, width: 25, stroke: "rgb(186, 186, 186)"}} />} name={"Consultations"} />
+        <NavItem icon={<Bottle fill={grey} style={{height: 25, width: 25, stroke: "rgb(186, 186, 186)"}} />} name={"Health tasks"} />
       </div>
 
       <div className={cn("profile__container")}>
