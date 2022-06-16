@@ -1,11 +1,11 @@
 import React, { HTMLAttributes, ReactNode } from "react";
 import cb from "classnames/bind";
 import styles from "./sidebar.module.scss";
-import { ReactComponent as Bandage } from "assets/bandage.svg";
-import { ReactComponent as Monitoring } from "assets/monitoring.svg";
-import { ReactComponent as Pills} from "assets/pills.svg";
-import { ReactComponent as Eye} from "assets/eye.svg";
-import { ReactComponent as Bottle} from "assets/bottle.svg";
+import { ReactComponent as Bandage } from "assets/challenge1/bandage.svg";
+import { ReactComponent as Monitoring } from "assets/challenge1/monitoring.svg";
+import { ReactComponent as Pills} from "assets/challenge1/pills.svg";
+import { ReactComponent as Eye} from "assets/challenge1/eye.svg";
+import { ReactComponent as Bottle} from "assets/challenge1/bottle.svg";
 
 const cn = cb.bind(styles);
 

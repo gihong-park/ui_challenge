@@ -1,13 +1,13 @@
 import React from "react";
 import cb from "classnames/bind";
 import styles from "./contents.module.scss";
-import { ReactComponent as Search} from "assets/search.svg";
-import { ReactComponent as Alarm} from "assets/alarm.svg";
-import { ReactComponent as Arrow} from "assets/arrow.svg";
-import { ReactComponent as ArrowLeft} from "assets/arrow_left.svg";
-import { ReactComponent as Stethoscope} from "assets/stethoscope.svg";
-import Card from "component/card/card";
-import Daily from "component/daily/daily";
+import { ReactComponent as Search} from "assets/challenge1/search.svg";
+import { ReactComponent as Alarm} from "assets/challenge1/alarm.svg";
+import { ReactComponent as Arrow} from "assets/challenge1/arrow.svg";
+import { ReactComponent as ArrowLeft} from "assets/challenge1/arrow_left.svg";
+import { ReactComponent as Stethoscope} from "assets/challenge1/stethoscope.svg";
+import Card from "component/challenge1/card/card";
+import Daily from "component/challenge1/daily/daily";
 
 const cn = cb.bind(styles);
 

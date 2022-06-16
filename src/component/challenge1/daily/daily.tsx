@@ -1,11 +1,11 @@
 import React from "react";
 import cb from "classnames/bind";
 import styles from "./daily.module.scss";
-import BottomCard from "component/bottomCard/bottomCard";
-import { ReactComponent as FootStep } from "assets/footstep.svg";
-import { ReactComponent as Heart } from "assets/heart.svg";
-import { ReactComponent as Gauge } from "assets/gauge.svg";
-import { ReactComponent as Moon } from "assets/moon.svg";
+import BottomCard from "component/challenge1/bottomCard/bottomCard";
+import { ReactComponent as FootStep } from "assets/challenge1/footstep.svg";
+import { ReactComponent as Heart } from "assets/challenge1/heart.svg";
+import { ReactComponent as Gauge } from "assets/challenge1/gauge.svg";
+import { ReactComponent as Moon } from "assets/challenge1/moon.svg";
 
 const cn = cb.bind(styles);
 
