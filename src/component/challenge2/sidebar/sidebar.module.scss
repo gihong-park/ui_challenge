@@ -1,0 +1,48 @@
+@import "style/global";
+
+$background-color: #232FC4;
+$on-background-color: #fff;
+
+.wrapper {
+  background: $background-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+
+  @include media (">desktop"){
+    width:25vw;
+  }
+
+  @include media (">tablet", "<=desktop") {
+    width: 30vw;
+  }
+
+  @include media (">mobile", "<=tablet") {
+    width: 300px;
+  }
+  @include media ("<=mobile" ) {
+    width: calc(300px + 1vw);
+  }
+}
+
+.my-content-nav__container {
+  padding: 4vw 2.5vw;
+
+  .logo__container {
+    margin-bottom: 4em;
+  }
+
+  .search__container {
+    margin-bottom: 1em;
+  }
+  .nav-item__container{
+    > div{
+      margin-bottom:1em; 
+    }
+  }
+}
+
+.icon {
+  color: rgba(#fff, 0.7);
+}
