@@ -27,7 +27,7 @@ $on-background-color: #fff;
 }
 
 .my-content-nav__container {
-  padding: 4vw 2.5vw;
+  padding: 4vw 2.5vw 1rem 2.5vw;
 
   .logo__container {
     margin-bottom: 4em;
@@ -45,4 +45,32 @@ $on-background-color: #fff;
 
 .icon {
   color: rgba(#fff, 0.7);
+}
+
+.active {
+  background-color: #141C6C;
+}
+
+.divider {
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+
+  border-top: solid 1px rgba(#fff, 0.3);
+  width: 100%;
+
+  &--vertical__bar {
+    border-right: solid 2px #fff;
+    height: 15px;
+    margin-right: 4%;
+    margin-left: 4%;
+  }
+}
+
+.center__container {
+  padding: 0 2.5vw;
 }
