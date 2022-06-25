@@ -7,6 +7,7 @@ const HomePage: React.FC = () => {
     <h1>UI_Challenge</h1>
     <Link to={"/challenge/1"}><h2>challenge1</h2></Link>
     <Link to={"/challenge/2"}><h2>challenge2</h2></Link>
+    <Link to={"/challenge/3"}><h2>challenge3</h2></Link>
   </div>
 }
 

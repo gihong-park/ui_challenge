@@ -9,6 +9,7 @@ $on-background-color: #fff;
   flex-direction: column;
   justify-content: flex-start;
   height: 100%;
+  max-width: 500px;
 
   @include media (">desktop"){
     width:25vw;
@@ -27,7 +28,7 @@ $on-background-color: #fff;
 }
 
 .my-content-nav__container {
-  padding: 4vw 2.5vw 1rem 2.5vw;
+  padding: 4em 2.5em 1rem 2.5em;
 
   .logo__container {
     margin-bottom: 4em;
@@ -72,5 +73,5 @@ $on-background-color: #fff;
 }
 
 .center__container {
-  padding: 0 2.5vw;
+  padding: 0 2.5em;
 }

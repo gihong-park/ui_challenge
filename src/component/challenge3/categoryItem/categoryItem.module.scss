@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > span {
+    color: #c0c0c0;
+    margin-top: 0.4rem;
+
+    &.active {
+      color: #000;
+    }
+  }
+}
+
+.image__container {
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  border: solid 2px #c0c0c0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.active {
+    border: solid 2px #d67d36;
+  }
+
+  .ball_chair {
+    width: 2.5rem;
+  }
+}

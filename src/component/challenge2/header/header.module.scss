@@ -1,0 +1,46 @@
+$font-color: #151C6E;
+$background-color: #232FC4;
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2em;
+
+  >h1 {
+    font-size: 4em;
+    padding:0;
+    line-height: 1;
+    margin: 0;
+    color: $font-color;
+  }
+}
+
+.user-content__container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .user__avatar {
+    width: 4em;
+    height: 4em;
+    margin-right: 20px;
+  }
+
+  >span{
+    color: $font-color;
+    font-weight: 400;
+    font-size: 1.3em;
+    margin-right: 2em;
+  }
+
+  .setting__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $background-color;
+    height: 1.4em;
+    width: 1.4em;
+
+  }
+}

@@ -1,0 +1,54 @@
+$color-orange: #d67d36;
+
+.wrapper {
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  width: 12rem;
+  padding: 0.5rem;
+  background-color: #f4f4f4;
+  border-radius: 1rem;
+
+  .heart {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    color: #a4a4a4;
+  }
+}
+
+.leather_chair {
+  width: 100%;
+  margin-bottom: 1.5rem;
+
+}
+
+.content__wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .content__container {
+    display: flex;
+    flex-direction: column;
+
+    >span:first-child {
+      font-size: 0.9rem;
+      margin-bottom: 0.3rem;
+    }
+
+    >span:last-child {
+      color: $color-orange;
+    }
+  }
+
+  .basket__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+  }
+}
